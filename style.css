@@ -166,6 +166,8 @@ header {
   font-weight: 300;
 }
 .cars-container {
+  padding-left: 30px;
+  padding-right: 30px;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -175,7 +177,7 @@ header {
 .cars-container .box {
   flex: 1 1 20rem;
   position: relative;
-  height: 300px;
+  height: 250px;
   border-radius: 0.5rem;
   overflow: hidden;
 }
@@ -205,4 +207,127 @@ header {
 .cars-container .box h2:hover {
   background: var(--main-color);
   color: var(--bg-color);
+}
+
+/* Planning section */
+.planning {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.planning-img {
+  margin-left: 20px;
+  flex: 1 1 21rem;
+}
+.planning-text {
+  flex: 1 1 21rem;
+}
+
+.planning-text span {
+  font-weight: 500;
+  color: var(--main-color);
+}
+.planning-text h2 {
+  font-size: 1.7rem;
+}
+.planning-text h3 {
+  font-size: 1.5rem;
+}
+
+.planning-text p {
+  font-size: 0.938rem;
+  margin: 0.5rem 0 1.4rem;
+}
+
+/* Manufacturing section */
+
+.Manufacturing-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.Manufacturing-container .box {
+  flex: 1 1 20rem;
+  position: relative;
+  padding: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  background: #f6f6f6;
+  border-radius: 0.5rem;
+}
+.Manufacturing-container .box img {
+  width: 100%;
+  height: 200px;
+  object-fit:cover;
+  object-position: center; 
+  margin-bottom: 1rem;
+}
+.Manufacturing-container .box img :hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.Manufacturing-container .box h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.Manufacturing-container .box .details {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1rem;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.Manufacturing-container .box .details:hover {
+  color: var(--main-color)
+  text-decoration: underline;
+}
+
+/* Designing section */
+
+.Designing {
+  min-height: 7vh;
+  padding: 10px 30px;
+}
+.Designing .container .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  height: 300px;
+  background: url(img/a4.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+}
+.Designing .container .row::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(115, 106, 106, 0.7);
+  z-index: -1;
+}
+
+.Designing .container p {
+  text-align: center;
+}
+.Designing .container h3 {
+  text-align: center;
 }
