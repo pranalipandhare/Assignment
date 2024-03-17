@@ -331,3 +331,14 @@ header {
 .Designing .container h3 {
   text-align: center;
 }
+
+/* footer section */
+footer{
+  background: black;
+  color: white;
+  padding: 5px 15px; 
+  
+}
+.center{
+  text-align: center;
+}
