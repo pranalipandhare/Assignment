@@ -100,7 +100,7 @@ header {
 
 li:hover ul#submenu{
   opacity: 1;
-  top:50px;
+  top:45px;
   display: block;
   color: var(--main-color);
   background-color: var(--bg-color);
